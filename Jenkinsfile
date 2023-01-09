@@ -29,7 +29,7 @@ pipeline {
 		success {
 			echo "This is success block"
 		}
-		faliure {
+		failure {
 		 echo "This is failure block"
 		}
 	}
