@@ -26,5 +26,11 @@ pipeline {
 		always {
 		echo "build is completed"
 		}
+		success {
+			echo "This is success block"
+		}
+		faliure {
+		 echo "This is failure block"
+		}
 	}
 }
