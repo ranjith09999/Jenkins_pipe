@@ -1,4 +1,4 @@
-CODE_CHANGE = getGitChanges()
+
 BRANCH_NAME = 'dev'
 
 
@@ -10,7 +10,7 @@ pipeline {
 		stage("build") {
 			when {
 			expression {
-				BRANCH_NAME == 'dev' || CODE_CHANGE == true
+				BRANCH_NAME == 'dev'
 			}
 			}
 			steps {
